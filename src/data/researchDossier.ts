@@ -1,0 +1,297 @@
+export interface BrandResearchItem {
+  id: string;
+  name: string;
+  category: string;
+  purposeAndAudience: string;
+  colorPalette: string[];
+  typography: string;
+  productPhotography: string;
+  layoutAndNav: string;
+  animationAndInteraction: string;
+  strengths: string[];
+  weaknesses: string[];
+  lessonsForScentStory: string;
+}
+
+export const RESEARCH_DOSSIER: BrandResearchItem[] = [
+  {
+    id: 'le-labo',
+    name: 'Le Labo Fragrances',
+    category: 'Niche Artisanal Perfumery',
+    purposeAndAudience: 'Cult classic apothecary-style luxury fragrances for design-conscious urbanites and fragrance connoisseurs.',
+    colorPalette: ['#F4F1EA (Warm Kraft)', '#2B2B2B (Charcoal Ink)', '#8C857B (Apothecary Gray)'],
+    typography: 'Typewriter monospace paired with understated industrial sans-serif.',
+    productPhotography: 'Stark, raw laboratory glass bottles on distressed concrete or wooden surfaces.',
+    layoutAndNav: 'Minimalist grid with immediate focus on formulation names and city exclusives.',
+    animationAndInteraction: 'Subtle text fades, personalized label generator with custom 23-character inscription.',
+    strengths: ['Iconic apothecary packaging', 'Personalized bottle labeling builds strong emotional ownership'],
+    weaknesses: ['Can feel cold or aloof to beginners unfamiliar with raw note codes'],
+    lessonsForScentStory: 'Allow customers to personalize discovery boxes with custom names or monograms to spark instant intimacy.'
+  },
+  {
+    id: 'byredo',
+    name: 'Byredo',
+    category: 'Modern Scandinavian Luxury',
+    purposeAndAudience: 'Artistic memory-rooted perfumes for creative professionals and luxury minimalists.',
+    colorPalette: ['#FFFFFF (Pure Gallery White)', '#000000 (Onyx Black)', '#E5E5E5 (Soft Fog)'],
+    typography: 'Bespoke geometric sans-serif with generous letterspacing and bold black caps.',
+    productPhotography: 'Monolithic black magnetic caps, crystal clear dome bottles, high-fashion editorial vignettes.',
+    layoutAndNav: 'Editorial magazine layout with horizontal image banners and airy negative space.',
+    animationAndInteraction: 'Smooth magnetic cursor effects, slow fade image transitions.',
+    strengths: ['Emotional memory-based fragrance naming (e.g. Gypsy Water, Mojave Ghost)', 'High aesthetic authority'],
+    weaknesses: ['Minimal explanation of note pyramids can intimidate novice shoppers'],
+    lessonsForScentStory: 'Lead with evocative narrative names while keeping top, heart, and base notes transparent and accessible.'
+  },
+  {
+    id: 'diptyque',
+    name: 'Diptyque Paris',
+    category: 'Heritage French Niche Maison',
+    purposeAndAudience: 'Literary & artistic fragrance lovers looking for poetic, hand-illustrated sensory journeys.',
+    colorPalette: ['#1C1B1A (India Ink)', '#F9F7F1 (Antique Vellum)', '#D4AF37 (Vintage Gold)'],
+    typography: 'Classic French calligraphic display with custom dancing letter oval cartouche.',
+    productPhotography: 'Hand-drawn engraved illustrations framing backlit glass flacons.',
+    layoutAndNav: 'Story-driven chapters, immersive olfactory maps, and illustrated ingredient scrolls.',
+    animationAndInteraction: 'Delicate ink-reveal transitions, interactive illustration reveals on hover.',
+    strengths: ['Hand-drawn visual storytelling connects botany with mythology', 'Immediate brand recognition'],
+    weaknesses: ['Dense navigation with multiple candle, perfume, and home fragrance subcategories'],
+    lessonsForScentStory: 'Incorporate romantic, narrative-driven fragrance descriptions and botanical storytelling.'
+  },
+  {
+    id: 'maison-margiela-replica',
+    name: "Maison Margiela 'Replica'",
+    category: 'Memory Olfactory Concept',
+    purposeAndAudience: 'Young adults and Gen Z seeking nostalgic sensory time capsules (e.g., By the Fireplace, Jazz Club).',
+    colorPalette: ['#FAF9F5 (Cotton Calico)', '#1E1E1E (Typewriter Black)', '#A3998D (Raw Linen)'],
+    typography: 'Typewriter Courier / Prestige Elite with woven 100% cotton fabric labels.',
+    productPhotography: 'Apothecary flacons bathed in natural domestic light next to memory props (vinyl records, wool throws).',
+    layoutAndNav: 'Filter by "Memory & Location" (e.g., Oxford 1974, Brooklyn 2013) rather than raw botanical families.',
+    animationAndInteraction: 'Instant polaroid-style hover states and ambient acoustic background cues.',
+    strengths: ['Direct emotional resonance by asking "What memory do you want to revisit?"', 'Clear time and place context'],
+    weaknesses: ['Formula transparency can get overshadowed by marketing concepts'],
+    lessonsForScentStory: 'Anchor each perfume in an emotional human moment ("After the Rain", "Golden Hour") rather than technical chemical jargon.'
+  },
+  {
+    id: 'aesop',
+    name: 'Aesop',
+    category: 'Intellectual Botanical Care & Scent',
+    purposeAndAudience: 'Philosophical, architectural aesthetics lovers prioritizing sustainable botany and refined prose.',
+    colorPalette: ['#EFEBE4 (Parchment)', '#252422 (Deep Licorice)', '#8E735B (Warm Bronze)'],
+    typography: 'Classic serif headlines paired with serene, balanced Swiss sans body.',
+    productPhotography: 'Amber glass apothecary vessels set against textured stone, cork, and cast bronze.',
+    layoutAndNav: 'Generous reading room layout with literary quotes and philosophical essays.',
+    animationAndInteraction: 'Deliberate, unhurried scroll physics with zero flashing banners or pop-up countdowns.',
+    strengths: ['Unrivaled editorial dignity and brand tone consistency', 'Zero commercial clutter'],
+    weaknesses: ['Restrained visual palette might feel muted for celebratory gifting'],
+    lessonsForScentStory: 'Eliminate all flashing sale tickers or aggressive popups; treat customers with editorial respect.'
+  },
+  {
+    id: 'jo-malone',
+    name: 'Jo Malone London',
+    category: 'British Luxury Cologne & Gifting',
+    purposeAndAudience: 'Prestige fragrance enthusiasts seeking elegant signature scents and bespoke gift packaging.',
+    colorPalette: ['#F6F2EA (Cream Box)', '#1D1D1B (Grosgrain Ribbon Black)', '#968C83 (Pewter)'],
+    typography: 'Refined British Transitional Serif with neat small caps accents.',
+    productPhotography: 'Iconic cream boxes tied with grosgrain ribbon alongside British meadow botanicals.',
+    layoutAndNav: 'Dedicated Fragrance Combining™ tool and interactive Gift Finder step-by-step assistant.',
+    animationAndInteraction: 'Interactive scent layering tool that visually blends two fragrance flacons on screen.',
+    strengths: ['World-class gifting experience and clear scent layering concepts'],
+    weaknesses: ['Light cologne concentrations often raise longevity concerns'],
+    lessonsForScentStory: 'Design the custom 3-piece discovery box as a premier gifting and self-discovery centerpiece.'
+  },
+  {
+    id: 'frederic-malle',
+    name: 'Éditions de Parfums Frédéric Malle',
+    category: 'Perfume Publishing House',
+    purposeAndAudience: 'Discerning fragrance connoisseurs who respect master perfumers as literary authors.',
+    colorPalette: ['#E30613 (Publishing Red)', '#1A1A1A (Carbon Black)', '#F2EFEB (Gallery Off-White)'],
+    typography: 'Classic book jacket typographic hierarchy with prominent author/perfumer credits.',
+    productPhotography: 'Minimalist pharmaceutical cylinders with author title bands on neutral pedestals.',
+    layoutAndNav: 'Fragrance diagnosis consultation questionnaire curated directly by Frédéric Malle.',
+    animationAndInteraction: 'Interactive Scent Finder questionnaire analyzing wardrobe, climate, and personality.',
+    strengths: ['Deep respect for fragrance formulation and authorship', 'Exceptional diagnostic quiz'],
+    weaknesses: ['Can feel academic or austere for young first-time perfume buyers'],
+    lessonsForScentStory: 'Incorporate intelligent diagnostic scoring that explains WHY a scent matches the user.'
+  },
+  {
+    id: 'penhaligons',
+    name: "Penhaligon's London",
+    category: 'British Aristocratic Storytelling',
+    purposeAndAudience: 'Collectors who delight in whimsical British portraits, aristocratic drama, and animal head stoppers.',
+    colorPalette: ['#1C2D27 (Victorian Racing Green)', '#B38F56 (Burnished Brass)', '#F5EFEB (Tea Linen)'],
+    typography: 'Victorian typographic flair with engraved filigree capitals and royal warrants.',
+    productPhotography: 'Heavier sculptural brass stoppers shaped as stags, owls, and leopards with dramatic spotlights.',
+    layoutAndNav: 'Interactive family tree and scent profiling algorithm based on eccentric character traits.',
+    animationAndInteraction: 'Animated character portraits with interactive quiz paths.',
+    strengths: ['Unmatched character-based storytelling (The Portraits Collection)', 'High gift appeal'],
+    weaknesses: ['Heavy ornamentation can sometimes hinder quick shopping on mobile devices'],
+    lessonsForScentStory: 'Use archetypal scent identities ("The Quiet Dreamer", "The Midnight Muse") with personality traits.'
+  },
+  {
+    id: 'vilhelm-parfumerie',
+    name: 'Vilhelm Parfumerie',
+    category: 'Art Deco Nostalgic Perfume',
+    purposeAndAudience: 'Design lovers captivated by sunny saffron yellow, heavy crystal glass, and nostalgic glamour.',
+    colorPalette: ['#F5C518 (Vilhelm Saffron Yellow)', '#242424 (Midnight Ink)', '#EAE6DC (Warm Canvas)'],
+    typography: 'Geometric Art Deco-inspired titling with round bakelite cap motifs.',
+    productPhotography: 'Heavy ribbed circular crystal flacons casting amber prisms on sunlit marble.',
+    layoutAndNav: 'Color-blocked landing sections leading with poetic stories behind each formulation.',
+    animationAndInteraction: 'Prismatic glass hover reflections and smooth carousel navigation.',
+    strengths: ['Distinctive color signature (unmistakable yellow boxes)', 'Heavy tactile glass packaging'],
+    weaknesses: ['Limited scent family breakdown on the primary shop grid'],
+    lessonsForScentStory: 'Establish a bold, memorable color palette with warm champagne gold and deep burgundy contrast.'
+  },
+  {
+    id: 'ds-and-durga',
+    name: 'D.S. & Durga',
+    category: 'Musical & Indie Olfactory Narrative',
+    purposeAndAudience: 'Indie music fans, road-trippers, and hip urbanites drawn to perfume as invisible soundtrack.',
+    colorPalette: ['#EBE6DD (Paper)', '#1A1A1A (Vinyl Black)', '#D97A53 (Terracotta Suede)'],
+    typography: 'Clean modern sans-serif with cassette tape & record sleeve liner note formatting.',
+    productPhotography: 'Cylindrical flacons with stark black caps alongside curated Spotify playlists and landscape photos.',
+    layoutAndNav: 'Fragrances paired with tracklists, lyric references, and landscape coordinates.',
+    animationAndInteraction: 'Integrated audio preview snippets and note breakdown pyramids.',
+    strengths: ['Creative multimedia pairing (scent + music playlist)', 'Unpretentious indie voice'],
+    weaknesses: ['Niche references can occasionally feel esoteric to casual buyers'],
+    lessonsForScentStory: 'Pair each fragrance with specific sensory atmospheres and recommended moments of wear.'
+  },
+  {
+    id: 'commodity',
+    name: 'Commodity Fragrances',
+    category: 'Scent Space & Accessibility',
+    purposeAndAudience: 'Gen Z and first-time buyers seeking straightforward, intuitive scent projection concepts.',
+    colorPalette: ['#FFFFFF (Clean White)', '#121212 (Matte Black)', '#A0A0A0 (Mineral Silver)'],
+    typography: 'Clean utilitarian neo-grotesque sans.',
+    productPhotography: 'Architectural monochrome bottles organized into Personal, Expressive, and Bold scent spaces.',
+    layoutAndNav: 'Innovative 3-tier "Scent Space" interactive selector comparing projection radius.',
+    animationAndInteraction: 'Interactive radius slider demonstrating how far the fragrance projects (Skin vs Room).',
+    strengths: ['Brilliant simplification of sillage/projection for beginners', 'Generous discovery sets'],
+    weaknesses: ['Monochrome identity can feel clinical or tech-oriented without warm emotion'],
+    lessonsForScentStory: 'Provide clear, jargon-free indicators for longevity and sillage so novices buy with confidence.'
+  },
+  {
+    id: 'maison-francis-kurkdjian',
+    name: 'Maison Francis Kurkdjian',
+    category: 'Haute Parisian Perfumery',
+    purposeAndAudience: 'Affluent luxury shoppers seeking radiant French elegance and status signatures (Baccarat Rouge 540).',
+    colorPalette: ['#9E1B32 (Rouge Burgundy)', '#C5A059 (Champagne Gold)', '#FFFFFF (Pristine White)'],
+    typography: 'Refined Didot-style serif with golden accents and French typographic spacing.',
+    productPhotography: 'Faceted glass cubes with zinc or gold caps refracting warm chandelier crystals.',
+    layoutAndNav: 'Wardrobe of Scents concept with interactive fragrance wardrobe builder.',
+    animationAndInteraction: 'Subtle golden sparkle reveals on product cards and fluid checkout stepper.',
+    strengths: ['High prestige aura', 'Generous 4-piece discovery kit with voucher redemption'],
+    weaknesses: ['High barrier to entry with premium pricing'],
+    lessonsForScentStory: 'Offer a discovery box price (₹999) that lowers friction and allows users to sample 3 scents.'
+  },
+  {
+    id: 'ex-nihilo',
+    name: 'Ex Nihilo Paris',
+    category: 'Contemporary Avant-Garde Perfumery',
+    purposeAndAudience: 'Modern luxury collectors interested in custom bespoke scent blending (Osmologue machine).',
+    colorPalette: ['#1C2A39 (Midnight Navy)', '#D4AF37 (Pale Gold)', '#F7F6F2 (Alabaster)'],
+    typography: 'Sharply cut modern serif paired with luxury condensed editorial sans.',
+    productPhotography: 'Graphic architectural bottles with filigree engraved caps on raw geometric marble slabs.',
+    layoutAndNav: 'Bespoke customization suite showing custom raw material boosters.',
+    animationAndInteraction: 'Interactive bottle cap customizer with metallic material switches.',
+    strengths: ['High-tech meets high-craft visual balance', 'Hyper-personalized bottle customization'],
+    weaknesses: ['Can feel overly cold or robotic on mobile browsers'],
+    lessonsForScentStory: 'Provide interactive bottle size toggles and live discovery box tray selection counter.'
+  },
+  {
+    id: 'officine-universelle-buly',
+    name: 'Officine Universelle Buly 1803',
+    category: '19th Century French Heritage',
+    purposeAndAudience: 'Esthetic traditionalists who adore antique calligraphy, glass water-based perfumes, and engraved combs.',
+    colorPalette: ['#3A2518 (Sepia Mahogany)', '#E8DEC8 (Aged Parchment)', '#1E3226 (Empire Green)'],
+    typography: 'Intricate 19th-century copperplate script and engraved woodcut serif.',
+    productPhotography: 'Heavy porcelain-finished bottles decorated with botanical engravings and hand-calligraphed labels.',
+    layoutAndNav: 'Virtual antique apothecary tour with interactive drawer pulls and customized calligraphy previews.',
+    animationAndInteraction: 'Live calligraphy engine rendering customer initials on gift boxes.',
+    strengths: ['Immense tactile romance and gift unboxing ceremony', 'Water-based alcohol-free formulations'],
+    weaknesses: ['Retro navigation can be confusing for customers seeking fast one-click purchases'],
+    lessonsForScentStory: 'Infuse genuine warmth, craft, and personalized gift notes without complicating checkout.'
+  },
+  {
+    id: 'santa-maria-novella',
+    name: 'Officina Profumo-Farmaceutica di Santa Maria Novella',
+    category: 'Historic Florentine Monastic Heritage',
+    purposeAndAudience: 'Heritage luxury lovers fascinated by 800 years of Dominican herbalist alchemy.',
+    colorPalette: ['#C5A16B (Florentine Gold)', '#3C2F2F (Renaissance Walnut)', '#FAF6F0 (Stucco Cream)'],
+    typography: 'Noble Renaissance humanistic serif with classical Roman proportions.',
+    productPhotography: 'Engraved glass flasks with wax seals and Renaissance botanical frescoes.',
+    layoutAndNav: 'Chronological archive timeline connecting perfumes to Catherine de’ Medici and Florentine history.',
+    animationAndInteraction: 'Timeline scrubbers that travel through historical recipe formulations.',
+    strengths: ['Authentic historical storytelling that cannot be replicated', 'Timeless elegance'],
+    weaknesses: ['Dated mobile navigation in certain product sub-galleries'],
+    lessonsForScentStory: 'Communicate timelessness through balanced typography, warm travertine stone, and golden light.'
+  },
+  {
+    id: 'matiere-premiere',
+    name: 'Matière Première',
+    category: 'Single Ingredient Radical Transparency',
+    purposeAndAudience: 'Minimalist perfume purists who want overdose concentrations of ethical natural ingredients.',
+    colorPalette: ['#1A1A1A (Deep Black)', '#F2EFE9 (Clean Muslin)', '#706B63 (Flax Grey)'],
+    typography: 'Ultra-clean modern grotesque with focus on geographical origins (e.g. Grasse, Madagascar).',
+    productPhotography: 'Cylindrical flacons showing natural tincture colors with botanical raw materials.',
+    layoutAndNav: 'Filter by central raw ingredient (Sandalwood, Rose, Vanilla, Incense).',
+    animationAndInteraction: 'Harvest map showing organic flower farming in Grasse, France.',
+    strengths: ['Total transparency on ethical farming and sourcing origins', 'High fragrance concentration (20%+)'],
+    weaknesses: ['Strictly minimalist design can blend into other contemporary clean brands'],
+    lessonsForScentStory: 'Highlight key botanical extracts (Calabrian bergamot, Mysore sandalwood, Madagascar vanilla).'
+  },
+  {
+    id: 'sana-jardin',
+    name: 'Sana Jardin Paris',
+    category: 'Social Impact & Clean Luxury',
+    purposeAndAudience: 'Conscious female consumers seeking luxury floral fragrances with fair-trade female empowerment.',
+    colorPalette: ['#8A3324 (Moroccan Terracotta)', '#E8AF78 (Warm Sand)', '#F9F5F0 (Orange Blossom Cream)'],
+    typography: 'Flowing warm serif with organic hand-lettered flourishes.',
+    productPhotography: 'Warm golden sunlight shining through amber bottles with Moroccan orange blossom petals.',
+    layoutAndNav: 'Beyond Sustainability™ story hub with interactive impact tracker per bottle sold.',
+    animationAndInteraction: 'Interactive circular economy flow diagram showing flower waste upcycling.',
+    strengths: ['Inspiring female cooperative narrative in Morocco', 'Vibrant, warm, sun-drenched imagery'],
+    weaknesses: ['Heavy editorial focus can dilute immediate product discoverability'],
+    lessonsForScentStory: 'Use warm, sun-drenched photography and transparent ethical values.'
+  },
+  {
+    id: 'juliette-has-a-gun',
+    name: 'Juliette Has a Gun',
+    category: 'Provocative Contemporary Niche',
+    purposeAndAudience: 'Bold young women and Gen Z fragrance lovers looking for modern synthetic-natural hybrids (Not a Perfume).',
+    colorPalette: ['#000000 (Midnight Shadow)', '#D11242 (Crimson Kiss)', '#F0EFF1 (Aluminium Silver)'],
+    typography: 'High-contrast romantic script overlaid on sleek modern sans.',
+    productPhotography: 'Monochrome painted opaque bottles with laser-etched gunmetal caps and ribbon accents.',
+    layoutAndNav: 'Playful interactive quiz asking about dates, fashion styles, and daily alter-egos.',
+    animationAndInteraction: 'Interactive scent roulette and rapid sample-box customization.',
+    strengths: ['Irreverent, youthful tone speaks directly to 18-28 age demographic', 'Huge viral success on social media'],
+    weaknesses: ['Aggressive edgy humor may deter customers looking for serene quiet luxury'],
+    lessonsForScentStory: 'Speak directly to young adults with warmth, curiosity, and relatable moments rather than pretension.'
+  },
+  {
+    id: 'nonfiction',
+    name: 'Nonfiction Beauty Seoul',
+    category: 'K-Beauty Emotional Fragrance',
+    purposeAndAudience: 'Gen Z and millennial lifestyle enthusiasts who view fragrance as daily poetic self-care.',
+    colorPalette: ['#282828 (Soft Black)', '#F3EFEA (Korean Hanji Paper)', '#7F786C (Warm Earth)'],
+    typography: 'Delicate modern serif headlines with quiet, widely-spaced Korean and English sans-serif.',
+    productPhotography: 'Intimate still-lifes of perfume bottles on wooden bedroom stools and morning linen sheets.',
+    layoutAndNav: 'Horizontal moodboards with short poetic essays and scent stories for each day of the week.',
+    animationAndInteraction: 'Subtle typewriter prose typing effect and smooth horizontal scroll galleries.',
+    strengths: ['Intimate emotional resonance with daily life rituals', 'Huge Gen Z resonance'],
+    weaknesses: ['Subtle descriptions sometimes lack detailed notes for scent experts'],
+    lessonsForScentStory: 'Emphasize the emotional question: "What do you want your fragrance to feel like?"'
+  },
+  {
+    id: 'ellis-brooklyn',
+    name: 'Ellis Brooklyn',
+    category: 'Clean Editorial Brooklyn Perfume',
+    purposeAndAudience: 'Modern clean beauty consumers who love literature, poetry, and sustainably formulated fine fragrance.',
+    colorPalette: ['#EBE6DE (Recycled Paper)', '#2F4858 (Deep Ocean Slate)', '#F4D06F (Pale Sol)'],
+    typography: 'Literary book serif headlines reminiscent of The New Yorker with clean modern body.',
+    productPhotography: 'Heavy recycled glass bottles with pastel tinted hues against natural sunlit botanicals.',
+    layoutAndNav: 'Scent Finder quiz based on mood (Cozy, Playful, Dreamy, Fresh) + clean ingredient standards.',
+    animationAndInteraction: 'Quick 3-question quiz with instant 2-scent comparison slider.',
+    strengths: ['Friendly, accessible language', 'Transparent clean fragrance standards without greenwashing'],
+    weaknesses: ['Packaging can look slightly youthful for high-end luxury collectors'],
+    lessonsForScentStory: 'Keep navigation friendly, approachable, and transparent while maintaining high-end luxury aesthetics.'
+  }
+];

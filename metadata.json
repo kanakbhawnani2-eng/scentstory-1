@@ -1,0 +1,7 @@
+{
+  "name": "ScentStory - A Personalized Fragrance Discovery Experience",
+  "description": "Every scent tells a story. Discover bespoke fragrances, explore scent profiles, take the interactive scent identity quiz, and build your custom fragrance box.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
